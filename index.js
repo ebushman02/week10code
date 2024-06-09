@@ -1,24 +1,6 @@
-// // Get a reference to the table
-// var table = document.getElementsByClassName("table");
-
-// function addRow() {
-//     let parent = document.createElement("tr");
-
-//     // Create and append cells
-//     for (let i = 0; i < 5; i++) {
-//         let cell = document.createElement("td");
-//         parent.appendChild(cell);
-//     }
-
-//     // Append the row to the table
-//     document.getElementById("myTable").appendChild(parent);
-// }
-
-// // Attach the function to the button click
-// let addRowBtn = document.getElementById('addRowButton');
-// addRowBtn.addEventListener("click", addRow);
-
+// setting input row equal to its equivalent in the HTML
 let inputRow = document.getElementById('inputRow')
+// Function saveRow which is used to add the input from the input boxes to the table permanently
 function saveRow() {
     const tableBody = document.getElementById('myTable').getElementsByTagName('tbody')[0];
     const lastRow = tableBody.lastElementChild;
